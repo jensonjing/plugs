@@ -13,3 +13,14 @@ $("#box").rollText({
 	speed: null,//设置文字的速度，可不传
 	className: null,//设置展示文字的样式，不传显示默认样式
 });
+
+2、描述：这是一个数组滚动插件
+文件：textScroll.js
+参数说明:
+这里$("#dataNums")为页面中元素
+
+$("#dataNums").rollNum({
+	deVal: getDayTime(),//要传入的数字
+	//digit:2,//显示几位数
+	//className: 'aa',自定义样式(改变数字样式)
+});
