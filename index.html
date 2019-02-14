@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html,body{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-image: url('./20190213131553729.jpg');
+        background-size: cover;
+    }
+    .vv{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+</style>
+<script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+<script src="./textroll.js"></script>
+<body>
+    <div id="box"></div>
+</body>
+<script>
+    $(function(){
+        var str = "收到需要赶快回复的信息那就考虑看看是不是要回应你我就等着对你说一句欢迎光临在无人的海岛上有美丽风景想有梦里的竹蜻蜓带我去远行去到你心里的那个神秘的巴黎再想和你生一群baby我开始美丽的际遇你来自东或西都没有太大的关系都听你因为始终和你前进回忆并肩旅行我愿意陪着你去东和西收到需要赶快回复的信息那就考虑看看是不是要回应你如果说以后都不用对你讲客气我就等着对你说一句欢迎光临在无人的海岛上有美丽风景想有梦里的竹蜻蜓带我去远行去到你心里的那个神秘的巴黎再想和你生一群baby我开始美丽的际遇你来自东或西都没有太大的关系都听你因为始终和你前进回忆并肩旅行我愿意陪着你去东和西我开始美丽的际遇你来自东或西都没有太大的关系都听你因为始终和你前进回忆并肩旅行我愿意陪着你去东和西我愿意陪着你去东和西";
+        $("#box").rollText({
+            texcont: str,
+            textbox:'box',
+            speed: 100,
+            className: 'vv'
+        })
+    })
+</script>
+</html>
